@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E3B3A"/><stop offset="1" stop-color="#072826"/>
+    </linearGradient>
+    <linearGradient id="tray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2DD4BF"/><stop offset="1" stop-color="#0D9488"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.5">
+      <stop offset="0" stop-color="#FCD34D" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FCD34D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <!-- glow behind -->
+  <circle cx="64" cy="52" r="46" fill="url(#glow)"/>
+  <!-- light rays -->
+  <g fill="#FBBF24" opacity="0.5">
+    <polygon points="64,44 60,12 68,12"/>
+    <polygon points="64,44 40,18 47,15"/>
+    <polygon points="64,44 88,18 81,15"/>
+    <polygon points="64,44 30,30 35,25"/>
+    <polygon points="64,44 98,30 93,25"/>
+  </g>
+  <!-- dollar sign -->
+  <text x="64" y="38" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#FBBF24" text-anchor="middle">$</text>
+  <!-- sparkles -->
+  <path d="M34 34 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2 Z" fill="#FDE68A"/>
+  <path d="M95 40 l1.5 4 l4 1.5 l-4 1.5 l-1.5 4 l-1.5 -4 l-4 -1.5 l4 -1.5 Z" fill="#FDE68A"/>
+  <!-- envelope -->
+  <rect x="38" y="52" width="52" height="38" rx="6" fill="#FFFFFF"/>
+  <path d="M43 58 L64 74 L85 58" fill="none" stroke="#0E3B3A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- inbox tray (front) -->
+  <path d="M30 84 L98 84 L92 108 a6 6 0 0 1 -5.5 4 L41.5 112 a6 6 0 0 1 -5.5 -4 Z" fill="url(#tray)"/>
+  <path d="M30 84 L42 84 L46 94 L82 94 L86 84 L98 84 L98 88 L86 88 L82 98 L46 98 L42 88 L30 88 Z" fill="#0E3B3A" opacity="0.25"/>
+</svg>
